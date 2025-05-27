@@ -101,6 +101,7 @@ header ul a {
   margin-bottom: 32px;
   border-left: solid 4px #f13239;
   padding-left: 8px;
+  color:#111111;
 }
 
 .gallery p {
@@ -117,6 +118,7 @@ header ul a {
   align-items: center;
   justify-content: center;
   width: 100%;
+  border-top: solid 2px red;
 }
 
 #history h2,
@@ -189,8 +191,9 @@ header ul a {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 16px;
-  height: 200px; /* define uma altura igual para todas */
+  height: 180px; /* define uma altura igual para todas */
   object-fit: cover; /* corta a imagem para caber sem distorcer */
+  
 }
 
 #persons h3 {
