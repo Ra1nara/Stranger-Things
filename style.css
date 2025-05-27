@@ -148,10 +148,14 @@ header ul a {
 
 .historybox img {
   width: 100%;
-  min-width: 400px;
   max-width: 50%;
   height: auto;
   display: block;
+}
+
+.historybox div,
+.historybox img {
+  flex: 1 1 350px;
 }
 
 /* === Elenco === */
