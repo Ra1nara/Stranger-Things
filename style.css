@@ -97,11 +97,11 @@ header ul a {
   height: 200px; /* define uma altura igual para todas */
   object-fit: cover; /* corta a imagem para caber sem distorcer */
 }
-.gallery h2 {
+#gallery h2 {
   margin-bottom: 32px;
-  border-left: solid 4px #f13239;
   padding-left: 8px;
-  color:#111111;
+  color: #111111;
+  border-left: solid 4px red;
 }
 
 .gallery p {
@@ -112,13 +112,19 @@ header ul a {
 
 #history {
   background-color: #111111;
-  padding: 8% 8% 0;
+  padding: 8% 5% 0;
   color: white;
   margin-top: 3em;
   align-items: center;
   justify-content: center;
   width: 100%;
   border-top: solid 2px red;
+}
+#history h2{
+  padding-left: 8px;
+  border-left: solid 4px red;
+  margin-left: 1.5em;
+
 }
 
 #history h2,
@@ -132,6 +138,9 @@ header ul a {
   margin: 0;
   flex-wrap: wrap;
   gap: 3%;
+}
+.historybox p {
+  line-height: 1.5;
 }
 
 .historybox div {
@@ -170,7 +179,9 @@ header ul a {
 }
 
 #persons h2 {
-  margin: 2em;
+  margin: 2em 3em;
+  padding-left: 8px;
+  border-left: solid 4px red;
 }
 
 .elenco {
@@ -193,7 +204,6 @@ header ul a {
   margin-bottom: 16px;
   height: 180px; /* define uma altura igual para todas */
   object-fit: cover; /* corta a imagem para caber sem distorcer */
-  
 }
 
 #persons h3 {
