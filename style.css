@@ -10,7 +10,7 @@ body {
 
 .container{
   max-width: 1200px;
-  margin: 0 12vh;
+  margin: 0 2em;
 }
 
 /* === Header === */
@@ -81,6 +81,7 @@ header ul a {
 /* === Galeria === */
 #gallery {
   margin: 64px auto 0;
+  justify-items: center;
   
 }
 
@@ -116,18 +117,18 @@ header ul a {
 
 #history {
   background-color: #111111;
-  padding: 8% 5% 0;
   color: white;
   margin-top: 3em;
-  align-items: center;
+  padding-top: 2.5em;
   justify-content: center;
   width: 100%;
   border-top: solid 2px red;
+  justify-items: center;
 }
 #history h2{
   padding-left: 8px;
   border-left: solid 4px red;
-  margin-left: 1.5em;
+
 
 }
 
@@ -139,7 +140,6 @@ header ul a {
 .historybox {
   display: flex;
   border-bottom: solid 4px #f13239;
-  margin: 0;
   flex-wrap: wrap;
   gap: 3%;
 }
@@ -149,7 +149,7 @@ header ul a {
 
 .historybox div {
   max-width: 40%;
-  margin: 2em;
+  margin: 1em 0;
   display: flex;
 }
 
@@ -179,22 +179,26 @@ header ul a {
 #persons {
   max-width: 100%;
   background-color: #111111;
-  padding: 4em 4em 0;
+  padding: 4em 2em 0;
   color: white;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 #persons h2 {
-  margin: 2em 3em;
+  margin: 2em 0;
   padding-left: 8px;
   border-left: solid 4px red;
+  
 }
 
 .elenco {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
   border-bottom: solid 4px #f13239;
+  justify-content: center;
 }
 
 .elenco div {
@@ -240,6 +244,10 @@ footer a:hover{
 /* === Responsivo === */
 
 @media (max-width: 1090px) {
+  .elenco{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .historybox img {
     max-width: 100%;
   }
